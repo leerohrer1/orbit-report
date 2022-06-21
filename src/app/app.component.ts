@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Satellite } from 'src/satellite';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'orbit-report';
-  color = 'red';
+  satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
 }
