@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table>
+      <caption>A summary of all of our current orbiting satellites</caption>
+      <thead>
+        <tr>
+          <th class="searchable">Name</th>
+          <th class="searchable">Type</th>
+          <th>Operational</th>
+          <th>Orbit Type</th>
+          <th>Launch Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let satellite of satellites">
+          <td>{{satellite.name}}</td>
+          <td>{{satellite.type}}</td>
+          <td>{{satellite.operational}}</td>
+          <td>{{satellite.orbitType | uppercase }}</td>
+          <td>{{satellite.launchDate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
