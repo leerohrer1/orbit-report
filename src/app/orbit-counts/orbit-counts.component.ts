@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Satellite } from 'src/satellite';
-import { SATELLITES } from 'src/satellite-data';
+import { SatellitesService } from '../satellites.service';
 
 @Component({
   selector: 'app-orbit-counts',
@@ -8,11 +7,13 @@ import { SATELLITES } from 'src/satellite-data';
   styleUrls: ['./orbit-counts.component.css']
 })
 export class OrbitCountsComponent implements OnInit {
-  satellites = SATELLITES;
+  public satellites: any = [];
 
-  constructor() { }
+  constructor(private satelliteService: SatellitesService) {}
 
   ngOnInit(): void {
+    this.satelliteService.getSatellites()
+      .subscribe(data => this.satellites = data)
   }
 
 }
