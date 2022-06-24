@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "debugger",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
       "name": "ng serve",
       "type": "pwa-chrome",
       "request": "launch",
@@ -14,6 +21,7 @@
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: test",
+      "runtimeExecutable": "npm",
       "url": "http://localhost:9876/debug.html"
     }
   ]
