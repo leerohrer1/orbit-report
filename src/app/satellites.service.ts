@@ -28,10 +28,6 @@ export class SatellitesService {
     };
   }
 
-  test() {
-    
-  }
-
   isSpaceDebris(): boolean {
     return (
       this.satellites.satellites
