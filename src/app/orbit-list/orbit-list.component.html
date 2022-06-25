@@ -3,7 +3,9 @@
   <head> </head>
   <body>
     <table>
-      <caption>A summary of all of our current orbiting satellites</caption>
+      <caption>
+        A summary of all of our current orbiting satellites
+      </caption>
       <thead>
         <tr>
           <th class="searchable">Name</th>
@@ -15,13 +17,15 @@
       </thead>
       <tbody>
         <tr *ngFor="let satellite of satellites.satellites">
-          <td>{{satellite.name}}</td>
-          <td>{{satellite.type}}</td>
-          <td>{{satellite.operational}}</td>
-          <td>{{satellite.orbitType | uppercase }}</td>
-          <td>{{satellite.launchDate}}</td>
+          <td>{{ satellite.name }}</td>
+          <td>{{ satellite.type }}</td>
+          <td>{{ satellite.operational }}</td>
+          <td>{{ satellite.orbitType | uppercase }}</td>
+          <td>{{ satellite.launchDate }}</td>
         </tr>
       </tbody>
     </table>
+
+    <app-satellite-search></app-satellite-search>
   </body>
 </html>

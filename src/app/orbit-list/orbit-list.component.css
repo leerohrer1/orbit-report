@@ -43,6 +43,7 @@ tbody tr:nth-child(even) {
 
 table {
   background-color: rgb(2, 66, 138);
+  padding-bottom: 20px;
 }
 
 caption {

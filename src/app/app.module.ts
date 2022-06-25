@@ -6,13 +6,15 @@ import { OrbitListComponent } from './orbit-list/orbit-list.component';
 import { WarningDirective } from './warning.directive';
 import { OrbitCountsComponent } from './orbit-counts/orbit-counts.component';
 import { SatellitesService } from './satellites.service';
+import { SatelliteSearchComponent } from './satellite-search/satellite-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrbitListComponent,
     WarningDirective,
-    OrbitCountsComponent
+    OrbitCountsComponent,
+    SatelliteSearchComponent,
   ],
   imports: [
     BrowserModule,
